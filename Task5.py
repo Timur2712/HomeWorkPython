@@ -12,5 +12,8 @@ num = int(input('Введите количество монет: '))
 heads = 0
 tails = 0
 for i in range(num):
-    currentCoinStatus = int(input(f'Положени емонеты{i} 0 или 1: '))
-    if currentCoinStatus == 0: tails
+    currentCoinStatus = int(input(f'Положение монеты{i} 0 или 1?: '))
+    if currentCoinStatus == 0: tails += 1
+    else: heads += 1
+if heads > tails: print (tails)
+else: print (heads)
